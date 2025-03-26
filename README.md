@@ -100,6 +100,35 @@ This app is configured for easy deployment to GitHub Pages. Follow these steps:
    ```
 5. Your app will be available at `https://your-username.github.io/todo-app`
 
+### GitHub Pages Configuration
+
+The app includes several optimizations for GitHub Pages:
+
+1. **`.nojekyll` file**: Prevents GitHub Pages from processing your site with Jekyll
+2. **Custom 404 page**: Handles client-side routing for React Router
+3. **GitHub Actions workflow**: Automatically deploys your app when you push to main
+4. **Base href tag**: Ensures all assets are loaded correctly
+5. **Redirect scripts**: Handles client-side routing for direct URL access
+
+### Troubleshooting GitHub Pages Deployment
+
+If your app doesn't appear correctly on GitHub Pages:
+
+1. **Check the repository settings**: Go to Settings > Pages and ensure:
+   - Source is set to "GitHub Actions"
+   - Custom domain is configured correctly (if applicable)
+
+2. **Check build logs**: Review the GitHub Actions workflow logs for any errors
+
+3. **Test locally**: Run `npm run build` and test the build locally with a static server:
+   ```bash
+   npx serve -s build
+   ```
+
+4. **Clear browser cache**: Try accessing your site in an incognito/private window
+
+5. **Check for path issues**: Ensure all asset paths use relative URLs or %PUBLIC_URL%
+
 ## Best Practices Implemented
 
 - **Separation of Concerns**: Components, services, and state management are separated
