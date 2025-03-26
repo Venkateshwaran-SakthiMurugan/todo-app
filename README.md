@@ -74,6 +74,31 @@ To use the Google Calendar integration:
 - `npm build`: Builds the app for production
 - `npm test`: Runs the test suite
 - `npm eject`: Ejects from Create React App
+- `npm run deploy`: Deploys the app to GitHub Pages
+
+## Deploying to GitHub Pages
+
+This app is configured for easy deployment to GitHub Pages. Follow these steps:
+
+1. Create a GitHub repository for your project
+2. Update the `homepage` field in `package.json` with your GitHub username:
+   ```json
+   "homepage": "https://your-username.github.io/todo-app"
+   ```
+3. Push your code to GitHub:
+   ```bash
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git branch -M main
+   git remote add origin https://github.com/your-username/todo-app.git
+   git push -u origin main
+   ```
+4. Deploy the app to GitHub Pages:
+   ```bash
+   npm run deploy
+   ```
+5. Your app will be available at `https://your-username.github.io/todo-app`
 
 ## Best Practices Implemented
 

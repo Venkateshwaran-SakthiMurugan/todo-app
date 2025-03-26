@@ -7,11 +7,14 @@ import App from './App';
 import { AuthProvider } from './contexts/AuthContext';
 import './Styles/index.css';
 
+// Get the base URL for GitHub Pages deployment
+const basename = process.env.PUBLIC_URL || '';
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <BrowserRouter>
+      <BrowserRouter basename={basename}>
         <AuthProvider>
           <App />
         </AuthProvider>
