@@ -1,0 +1,24 @@
+.task-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.task-content-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: 992px) {
+  .task-container {
+    flex-direction: column;
+  }
+  
+  .task-form {
+    min-width: 400px;
+  }
+  
+  .task-content-container {
+    flex: 2;
+  }
+}

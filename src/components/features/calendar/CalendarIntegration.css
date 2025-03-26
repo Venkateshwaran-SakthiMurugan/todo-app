@@ -1,0 +1,149 @@
+.calendar-integration {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-integration h3 {
+  margin-top: 0;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.calendar-loading {
+  padding: 15px;
+  text-align: center;
+  color: #666;
+  font-style: italic;
+}
+
+.calendar-message {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #e9f5ff;
+  color: #0066cc;
+}
+
+.calendar-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: flex-start;
+}
+
+.calendar-button {
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s, transform 0.1s;
+  padding: 10px 15px;
+  width: 2000px;
+  height: 44px;
+  text-align: center;
+  font-size: 14px;
+  flex: 0 0 auto;
+}
+
+.calendar-button:hover {
+  transform: translateY(-1px);
+}
+
+.calendar-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.sign-in-button {
+  background-color: #4285f4;
+  color: white;
+}
+
+.sign-in-button:hover {
+  background-color: #3367d6;
+}
+
+.add-button {
+  background-color: #34a853;
+  color: white;
+}
+
+.add-button:hover {
+  background-color: #2e8b47;
+}
+
+.sign-out-button {
+  background-color: #ea4335;
+  color: white;
+}
+
+.sign-out-button:hover {
+  background-color: #d33426;
+}
+
+.calendar-info {
+  margin-top: 20px;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.google-auth-help {
+  margin-top: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+}
+
+.help-section {
+  margin-bottom: 15px;
+}
+
+.help-section h5 {
+  margin-top: 15px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.help-section ol, 
+.help-section ul {
+  padding-left: 20px;
+}
+
+.help-section li {
+  margin-bottom: 8px;
+}
+
+code {
+  background-color: #f0f0f0;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-family: monospace;
+  font-size: 0.9em;
+}
+
+.block-code {
+  display: block;
+  margin: 8px 0;
+  padding: 8px;
+  background-color: #f0f0f0;
+  border-radius: 3px;
+  font-family: monospace;
+  overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+  .calendar-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .calendar-button {
+    width: 200px;
+  }
+}

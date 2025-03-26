@@ -1,0 +1,15 @@
+.task-page {
+  padding: 20px;
+}
+
+.welcome-message {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 500;
+  text-align: center;
+  padding: 10px;
+  background-color: #f0f8ff;
+  border-radius: 5px;
+  border-left: 4px solid #0099ff;
+}

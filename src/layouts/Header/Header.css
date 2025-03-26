@@ -1,0 +1,98 @@
+.header {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0099ff;
+    height: 80px;
+    width: 100%;
+    border-bottom: solid 3px black;
+    border-radius: 5px;
+    position: relative;
+    padding: 0 1rem;
+}
+
+.title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-weight: 500;
+    font-size: 1.8rem;
+    text-align: center;
+    width: auto;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+.header-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.header-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    margin: 1rem;
+}
+
+.login {
+    background-color: #ffffff;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    border: none;
+    border-radius: 5px;
+    color: #0099ff;
+    font-size: 90%;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.login:hover {
+    scale: 0.97;
+    background-color: #f0f0f0;
+}  
+
+.logout {
+    background-color: #ffffff;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    border: none;
+    border-radius: 5px;
+    color: #0099ff;
+    font-size: 90%;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.logout:hover {
+    scale: 0.97;
+    background-color: #f0f0f0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.4rem;
+    }
+    
+    .logo {
+        width: 40px;
+        height: 40px;
+        margin: 0.5rem;
+    }
+    
+    .login, .logout {
+        padding: 0.4rem 0.8rem;
+        margin: 0.5rem;
+    }
+}
