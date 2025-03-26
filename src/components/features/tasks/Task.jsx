@@ -1,7 +1,7 @@
 import React from 'react';
 import TaskForm from './TaskForm';
 import TaskList from './TaskList';
-import CalendarIntegration from '../../CalendarIntegration/CalendarIntegration';
+import CalendarIntegration from '../calendar/CalendarIntegration';
 import useTaskManager from '../../../hooks/useTaskManager';
 import './Task.css';
 

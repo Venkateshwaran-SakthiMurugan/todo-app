@@ -2,7 +2,7 @@ import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import Header from './layouts/Header/Header';
 import Login from './Pages/Login/Login';
-import TaskPage from './Pages/TaskPage/TaskPage';
+import TaskPage from './Pages/TaskPage/TaskPage.jsx';
 import { useAuth } from './contexts/AuthContext';
 import './Styles/App.css';
 
